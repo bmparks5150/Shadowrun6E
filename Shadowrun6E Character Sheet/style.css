@@ -1,0 +1,76 @@
+.charsheet{
+    background-color: rgb(172, 165, 165);
+    background-repeat: repeat;
+}
+
+h3{
+    text-align: center;
+}
+
+input[type="text"]{
+    border: 0;
+    border-bottom: 1px solid black;
+} 
+
+input[type="number"]{
+    border: 0;
+    border-bottom: 1px solid black;
+    -moz-appearance: textfield;
+}
+
+.sheet-character,
+.sheet-attributes,
+.sheet-skills,
+.sheet-qualities,
+.sheet-lifestyle,
+.sheet-weapons,
+.sheet-armor,
+.sheet-gear,
+.sheet-vehicles,
+.sheet-contacts,
+.sheet-journal {
+    display: none;
+}
+
+.sheet-tabstoggle[value="character"] ~ div.sheet-character,
+.sheet-tabstoggle[value="attributes"] ~ div.sheet-attributes,
+.sheet-tabstoggle[value="skills"] ~ div.sheet-skills,
+.sheet-tabstoggle[value="qualities"] ~ div.sheet-qualities,
+.sheet-tabstoggle[value="lifestyle"] ~ div.sheet-lifestyle,
+.sheet-tabstoggle[value="weapons"] ~ div.sheet-weapons,
+.sheet-tabstoggle[value="armor"] ~ div.sheet-armor,
+.sheet-tabstoggle[value="gear"] ~ div.sheet-gear,
+.sheet-tabstoggle[value="vehicles"] ~ div.sheet-vehicles,
+.sheet-tabstoggle[value="contacts"] ~ div.sheet-contacts,
+.sheet-tabstoggle[value="journal"] ~ div.sheet-journal {
+    display: block;
+}
+
+.sheet-small-button{
+    width: 5%;
+}
+
+.sheet-flex-section{
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border: 1px solid black;
+
+}
+
+.sheet-flex-section-horizontal{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border: 1px solid black;
+    justify-content:flex-start
+}
+
+.repcontainer[data-groupname="repeating_example"] > .repitem {
+    display: inline-block;
+}
+
+.sheet.long-number{
+    size: 500px;
+    width: 100%;
+}
