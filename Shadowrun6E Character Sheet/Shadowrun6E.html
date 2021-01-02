@@ -1,15 +1,17 @@
 <div>
-    <button type="action" name="act_character">Character</button>
-    <button type="action" name="act_attributes">Attributes</button>
-    <button type="action" name="act_skills">Skills</button>
-    <button type="action" name="act_qualities">Qualities</button>
-    <button type="action" name="act_lifestyle">Lifestyle</button>
-    <button type="action" name="act_weapons">Weapons</button>
-    <button type="action" name="act_armor">Armor</button>
-    <button type="action" name="act_gear">Gear</button>
-    <button type="action" name="act_vehicles">Vehicles</button>
-    <button type="action" name="act_contacts">Contacts</button>
-    <button type="action" name="act_journal">Journal</button>
+    <button type="action" name="act_character" style="font-size: smaller;">Character</button>
+    <button type="action" name="act_attributes" style="font-size: smaller;">Attributes</button>
+    <button type="action" name="act_skills" style="font-size: smaller;">Skills</button>
+    <button type="action" name="act_qualities" style="font-size: smaller;">Qualities</button>
+    <button type="action" name="act_lifestyle" style="font-size: smaller;">Lifestyle</button>
+    <button type="action" name="act_weapons" style="font-size: smaller;">Weapons</button>
+    <button type="action" name="act_spells" style="font-size: smaller;">Spells</button>
+    <button type="action" name="act_adept" style="font-size: smaller;">Adept</button>     
+    <button type="action" name="act_armor" style="font-size: smaller;">Armor</button>
+    <button type="action" name="act_gear" style="font-size: smaller;">Gear</button>
+    <button type="action" name="act_vehicles" style="font-size: smaller;">Vehicles</button>
+    <button type="action" name="act_contacts" style="font-size: smaller;">Contacts</button>
+    <button type="action" name="act_journal" style="font-size: smaller;">Journal</button>
 </div>
 <input type="hidden" class="sheet-tabstoggle" name="attr_sheetTab" value="character" />
 
@@ -78,7 +80,7 @@
             <div class="flex-section-horizontal">
                 <span><label>Skill<input type="text" name="attr_skill_name"></label></span>
                 <span><label>Rank<input type="number" name="attr_skill_rank"></label></span>
-                <span><label>ATT<input type="text" name="attr_skill_attribute"></label></span>
+                <span><label>Attribute<input type="text" name="attr_skill_attribute"></label></span>
                 <span><label>Type<input type="text" name="attr_skill_type" style="width:75%"></label></span>
                 <br>
             </div>
@@ -202,6 +204,48 @@
     </div>
 </div>
 
+<div class="sheet-spells">
+    <h3>Spells</h3>
+    <div>
+        <div class="flex-section-horizontal"></div>
+                <br>
+                <fieldset class="repeating_ranged-weapons" style="display: none;">
+                    <div class="flex-section-horizontal">
+                        <span><label>S/P/R/CF<input type="text" name="attr_spell_name"></label></span>
+                        <span><label>Type/Target<input type="text" name="attr_spell_target"></label></span>
+                        <span><label>Ranged<input type="number" name="attr_spell_range"></label></span>
+                        <span><label>Duration<input type="number" name="attr_spell_number"></label></span>
+                        <span><label>Drain<input type="number" name="attr_spell_drain"></label></span>                      
+                    </div>
+                </fieldset>
+                <div class="repcontainer" data-groupname="repeating_ranged-weapons">
+                    <div class="repitem">
+                        <div class="itemcontrol">
+                    </div>
+                </div>
+            </div>
+    </div>   
+</div>
+
+<div class="sheet-adpet">
+    <h3>Adept Powers</h3>
+    <div class="flex-section-horizontal"></div>
+    <br>
+    <fieldset class="repeating_gear" style="display: none;">
+        <div class="flex-section-horizontal">
+            <span><label>Name<input type="text" name="attr_adept_name"></label></span>
+            <span><label>Level<input type="number" name="attr_adept_level"></label></span>
+            <span><label>Notes<textarea name="attr_gear_notes"></textarea></label></span>                   
+        </div>
+    </fieldset>
+    <div class="repcontainer" data-groupname="repeating_gear">
+        <div class="repitem">
+            <div class="itemcontrol">
+        </div>
+    </div>
+</div>
+</div>
+
 <div class="sheet-armor">
     <h3>Armor</h3>
     <div class="flex-section-horizontal"></div>
@@ -297,7 +341,7 @@
 <!-----------------------------------Script Worker----------------------------------------->
 
 <script type="text/worker">
-    const buttonList = ["character", "attributes", "skills", "qualities", "lifestyle", "weapons", "armor", "gear", "vehicles", "contacts", "journal"];
+    const buttonList = ["character", "attributes", "skills", "qualities", "lifestyle", "weapons", "spells", "adept", "armor", "gear", "vehicles", "contacts", "journal"];
 
     buttonList.forEach(button => {
         on(`clicked:${button}`, function() {

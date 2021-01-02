@@ -1,8 +1,3 @@
-.charsheet{
-    background-color: rgb(172, 165, 165);
-    background-repeat: repeat;
-}
-
 h3{
     text-align: center;
 }
@@ -24,6 +19,8 @@ input[type="number"]{
 .sheet-qualities,
 .sheet-lifestyle,
 .sheet-weapons,
+.sheet-spells,
+.sheet-adept,
 .sheet-armor,
 .sheet-gear,
 .sheet-vehicles,
@@ -38,6 +35,8 @@ input[type="number"]{
 .sheet-tabstoggle[value="qualities"] ~ div.sheet-qualities,
 .sheet-tabstoggle[value="lifestyle"] ~ div.sheet-lifestyle,
 .sheet-tabstoggle[value="weapons"] ~ div.sheet-weapons,
+.sheet-tabstoggle[value="spells"] ~ div.sheet-spells,
+.sheet-tabstoggle[value="adept"] ~ div.sheet-adept,
 .sheet-tabstoggle[value="armor"] ~ div.sheet-armor,
 .sheet-tabstoggle[value="gear"] ~ div.sheet-gear,
 .sheet-tabstoggle[value="vehicles"] ~ div.sheet-vehicles,
