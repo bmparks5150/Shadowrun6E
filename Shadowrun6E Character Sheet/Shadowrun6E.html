@@ -1,71 +1,113 @@
-<div>
-    <button type="action" name="act_character" style="font-size: smaller;">Character</button>
-    <button type="action" name="act_attributes" style="font-size: smaller;">Attributes</button>
-    <button type="action" name="act_skills" style="font-size: smaller;">Skills</button>
-    <button type="action" name="act_qualities" style="font-size: smaller;">Qualities</button>
-    <button type="action" name="act_lifestyle" style="font-size: smaller;">Lifestyle</button>
-    <button type="action" name="act_weapons" style="font-size: smaller;">Weapons</button>
-    <button type="action" name="act_spells" style="font-size: smaller;">Spells</button>
-    <button type="action" name="act_adept" style="font-size: smaller;">Adept</button>     
-    <button type="action" name="act_armor" style="font-size: smaller;">Armor</button>
-    <button type="action" name="act_gear" style="font-size: smaller;">Gear</button>
-    <button type="action" name="act_vehicles" style="font-size: smaller;">Vehicles</button>
-    <button type="action" name="act_contacts" style="font-size: smaller;">Contacts</button>
-    <button type="action" name="act_journal" style="font-size: smaller;">Journal</button>
+<div class="btn-span">
+    <button type="action" name="act_character">Character</button>
+    <button type="action" name="act_attributes">Attributes</button>
+    <button type="action" name="act_skills">Skills</button>
+    <button type="action" name="act_qualities">Qualities</button>
+    <button type="action" name="act_lifestyle">Lifestyle</button>
+    <button type="action" name="act_weapons">Weapons</button>
+    <button type="action" name="act_spells">Spells</button>
+    <button type="action" name="act_adept">Adept</button>     
+    <button type="action" name="act_armor">Armor</button>
+    <button type="action" name="act_gear">Gear</button>
+    <button type="action" name="act_vehicles">Vehicles</button>
+    <button type="action" name="act_contacts">Contacts</button>
+    <button type="action" name="act_journal">Journal</button>
 </div>
 <input type="hidden" class="sheet-tabstoggle" name="attr_sheetTab" value="character" />
 
-<img src="https://raw.githubusercontent.com/bmparks5150/Shadowrun6E/main/Shadowrun6E%20Character%20Sheet/images/Shadowrun-Logo.png" />
+<img src="https://github.com/bmparks5150/Shadowrun6E/blob/main/Shadowrun6E%20Character%20Sheet/images/Shadowrun-Logo.png?raw=true" />
 
 <div class="sheet-character">
     <h3>Character Information</h3>
     <br>
-    <div class="flex-section">
-        <span><label>Name<input type="text" name="attr_character_name"></label></span>
-        <span><label>Metatype<input type="text" name="attr_character_metatype"></lable></span>
-        <span><label>Ethnicity<input type="text" name="attr_character_ethnicity"></label></span>
-        <span><label>Age<input type="number" value="0" name="attr_character_age"></label></span>
-        <span><label>Sex<input type="text" name="attr_character_sex" style="width: 100px"></label></span>
-        <span><label>Height<input type="number" value="0" name="attr_character_height"></label></span>
-        <span><label>Weight<input type="number" value="0" name="attr_character_weight"></label></span>
-        <span><label>Reputation<input type="number" value="0" name="attr_character_rep"></label></span>
-        <span><label>Heat<input type="number" value="0" name="attr_character_heat"></label></span>
-        <span><label>Karma<input type="number" value="0" name="attr_character_karma"></label></span>
-        <span><label>Total Karma<input type="number" value="0" name="attr_character_total_karma"></label></span>
+    <div class="grid-section">
+        <div></div>
+        <div class="labels">
+            <span><label>Name</label></span>
+            <span><label>Metatype</label></span>
+            <span><label>Ethnicity</label></span>
+            <span><label>Age</label></span>
+            <span><label>Sex</label></span>
+            <span><label>Height</label></span>
+            <span><label>Weight</label></span>
+            <span><label>Reputation</label></span>
+            <span><label>Heat</label></span>
+            <span><label>Karma</label></span>
+            <span><label>Total Karma</label>
+        </div>
+        <div class="values">
+            <span><input type="text" name="attr_character_name"></span>
+            <span><input type="text" name="attr_character_metatype"></span>
+            <span><input type="text" name="attr_character_ethnicity"></span>
+            <span><input type="number" value="0" name="attr_character_age"></span>
+            <span><input type="text" name="attr_character_sex" style="width: 100px"></span>
+            <span><input type="number" value="0" name="attr_character_height"></span>
+            <span><input type="number" value="0" name="attr_character_weight"></span>
+            <span><input type="number" value="0" name="attr_character_rep"></span>
+            <span><input type="number" value="0" name="attr_character_heat"></span>
+            <span><input type="number" value="0" name="attr_character_heat"></span>
+            <span><input type="number" value="0" name="attr_character_karma"></span>
+            <span><input type="number" value="0" name="attr_character_total_karma"></span>
+        </div>
+        <div></div>
     </div>
 </div>
 
 <div class="sheet-attributes">
     <h3>Attributes</h3>
     <br>
-    <div class="flex-section">
-        <div class="2colrow">
-            <div class="col">
-                <span><label>Body<input type="number" value="0" name="attr_character_body"></label></span>
-                <span><label>Agility<input type="number" value="0" name="attr_character_agility"></label></span>
-                <span><label>Reaction<input type="number" value="0" name="attr_character_reaction"></label></span>
-                <span><label>Strength<input type="number" value="0" name="attr_character_strength"></label></span>
-                <span><label>Willpower<input type="number" value="0" name="attr_character_willpower"></label></span>
-                <span><label>Logic<input type="number" value="0" name="attr_character_logic"></label></span>
-                <span><label>Intuition<input type="number" value="0" name="attr_character_intuition"></label></span>
-                <span><label>Charisma<input type="number" value="0" name="attr_character_charisma"></label></span>
-                <span><label>Edge<input type="number" value="0" name="attr_character_edge"></label></span>
-                <span><label>Edge Points<input type="number" value="0" name="attr_character_edge_points"></label></span>
-                <span><label>Unarmed<input type="number" value="0" name="attr_character_unarmed"></label></span>
-            </div>
-            <div class="col">
-                <span><label>Essence<input type="number" value="0" name="attr_character_body"></label></span>
-                <span><label>Magic/Resonance<input type="number" value="0" name="attr_character_agility"></label></span>
-                <span><label>Initiative<input type="number" value="0" name="attr_character_reaction"></label></span>
-                <span><label>Matrix Initiative<input type="number" value="0" name="attr_character_strength"></label></span>
-                <span><label>Astral Initiative<input type="number" value="0" name="attr_character_willpower"></label></span>
-                <span><label>Composure<input type="number" value="0" name="attr_character_logic"></label></span>
-                <span><label>Judge Intentions<input type="number" value="0" name="attr_character_intuition"></label></span>
-                <span><label>Memory<input type="number" value="0" name="attr_character_charisma"></label></span>
-                <span><label>Lift/Carry<input type="number" value="0" name="attr_character_edge"></label></span>
-                <span><label>Movement<input type="number" value="0" name="attr_character_edge_points"></label></span>
-                <span><label>Defense Rating<input type="number" value="0" name="attr_character_unarmed"></label></span>
-            </div>
+    <div class="grid-section">
+        <div class="labels">
+            <span><label>Body</label></span>
+            <span><label>Agility</label></span>
+            <span><label>Reaction</label></span>
+            <span><label>Strength</label></span>
+            <span><label>Willpower</label></span>
+            <span><label>logic</label></span>
+            <span><label>Intuition</label></span>
+            <span><label>Charisma</label></span>
+            <span><label>Edge</label></span>
+            <span><label>Edge Points</label></span>
+            <span><label>Unarmed</label></span>
+        </div>
+        <div class="values">
+            <span><input type="number" value="0" name="attr_character_body"></span>
+            <span><input type="number" value="0" name="attr_character_agility"></span>
+            <span><input type="number" value="0" name="attr_character_reaction"></span>
+            <span><input type="number" value="0" name="attr_character_strength"></span>
+            <span><input type="number" value="0" name="attr_character_willpower"></span>
+            <span><input type="number" value="0" name="attr_character_logic"></label></span>
+            <span><input type="number" value="0" name="attr_character_intuition"></label></span>
+            <span><input type="number" value="0" name="attr_character_charisma"></span>
+            <span><input type="number" value="0" name="attr_character_edge"></span>
+            <span><input type="number" value="0" name="attr_character_edge_points"></span>
+            <span><input type="number" value="0" name="attr_character_unarmed"></span>
+        </div>
+        <div class="labels">
+            <span><label>Essence</label></span>
+            <span><label>Magic/Resonance</label></span>
+            <span><label>Initiative</label></span>
+            <span><label>Matrix Initiative</label></span>
+            <span><label>Astral Initiative</label></span>
+            <span><label>Composure</label></span>
+            <span><label>Judge Intentions</label></span>
+            <span><label>Memory</label></span>
+            <span><label>Lift/Carry</label></span>
+            <span><label>Movement</label></span>
+            <span><label>Defense Rating</label></span>
+        </div>
+        <div class="values">
+            <span><input type="number" value="0" name="attr_character_essence"></span>
+            <span><input type="number" value="0" name="attr_character_magic"></span>
+            <span><input type="number" value="0" name="attr_character_initiative"></span>
+            <span><input type="number" value="0" name="attr_character_matrix_init"></span>
+            <span><input type="number" value="0" name="attr_character_astral_init"></span>
+            <span><input type="number" value="0" name="attr_character_composure"></span>
+            <span><input type="number" value="0" name="attr_character_intentions"></span>
+            <span><input type="number" value="0" name="attr_character_memory"></span>
+            <span><input type="number" value="0" name="attr_character_lift"></span>
+            <span><input type="number" value="0" name="attr_character_movement"></span>
+            <span><input type="number" value="0" name="attr_character_defense"></span>
         </div>
     </div>
 </div>

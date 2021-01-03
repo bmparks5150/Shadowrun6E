@@ -1,4 +1,6 @@
 img{
+    width: 15%;
+    height: 15%;
     margin-left: auto;
     margin-right: auto;
     display: block;
@@ -6,21 +8,74 @@ img{
 
 h3{
     text-align: center;
+    color: #b6d9f8;
+    font-size: large;
+}
+
+h2{
+    text-align: center;
+    color: #b6d9f8;
+    font-size: large;
+}
+
+label{
+    color: #b6d9f8;
+    font-size: small;
+    margin-left: 40%;
+}
+
+textarea{
+    background: rgba(0,0,0,0);
+    color: #b6d9f8;
+    border: 0;
+}
+
+select{
+    background: rgba(0,0,0,0);
+    color: #b6d9f8; 
 }
 
 input[type="text"]{
     border: 0;
-    border-bottom: 1px solid black;
+    border-bottom: 2px solid #b6d9f8;
+    background: rgba(0,0,0,0);
+    color: #b6d9f8;
+    font-size: small;
 } 
 
 input[type="number"]{
     border: 0;
-    border-bottom: 1px solid black;
+    border-bottom: 2px solid #b6d9f8;
     -moz-appearance: textfield;
+    background: rgba(0,0,0,0);
+    color: #b6d9f8;
+    font-size: small;
+    text-align: center;
 }
 
 .charsheet{
     background-image: url(https://raw.githubusercontent.com/bmparks5150/Shadowrun6E/main/Shadowrun6E%20Character%20Sheet/images/Shadworun-Background.png);
+    font-family: Contrail, sans-serif;
+}
+
+.sheet-btn-span{
+    margin-left: 2rem;
+}
+
+.sheet-grid-section{
+    display: grid;    
+    grid-template-columns: repeat(4, 20%);  
+    justify-content: center;  
+    margin-left: 5%;
+}
+
+.sheet-labels{
+    display: grid;
+}
+
+.sheet-values{
+    display: grid;
+    margin-left: 20px;
 }
 
 .sheet-character,
@@ -55,24 +110,13 @@ input[type="number"]{
     display: block;
 }
 
-.sheet-small-button{
-    width: 5%;
-}
-
-.sheet-flex-section{
-    display:flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    border: 1px solid black;
-
-}
-
 .sheet-flex-section-horizontal{
     display:flex;
     flex-direction: row;
     flex-wrap: wrap;
     border: 1px solid black;
-    justify-content:flex-start
+    justify-content:flex-start;
+    color: #ff1ea1;
 }
 
 .repcontainer[data-groupname="repeating_example"] > .repitem {
@@ -83,3 +127,4 @@ input[type="number"]{
     size: 500px;
     width: 100%;
 }
+
