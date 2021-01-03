@@ -1,0 +1,393 @@
+<div class="flex-section no-border">
+    <div class="btn-span">
+        <button type="action" name="act_character">Character</button>
+        <button type="action" name="act_attributes">Attributes</button>
+        <button type="action" name="act_skills">Skills</button>
+        <button type="action" name="act_qualities">Qualities</button>
+        <button type="action" name="act_lifestyle">Lifestyle</button>
+        <button type="action" name="act_weapons">Weapons</button>
+        <button type="action" name="act_spells">Spells</button>
+        <button type="action" name="act_adept">Adept</button>     
+        <button type="action" name="act_armor">Armor</button>
+        <button type="action" name="act_gear">Gear</button>
+        <button type="action" name="act_vehicles">Vehicles</button>
+        <button type="action" name="act_contacts">Contacts</button>
+        <button type="action" name="act_journal">Journal</button>
+    </div>
+</div>
+<input type="hidden" class="sheet-tabstoggle" name="attr_sheetTab" value="character" />
+
+<img src="https://github.com/bmparks5150/Shadowrun6E/blob/main/Shadowrun6E%20Character%20Sheet/images/Shadowrun-Logo.png?raw=true" />
+
+<div class="sheet-character">
+    <h3>Character Information</h3>
+    <br>
+    <div class="grid-section">
+        <div></div>
+        <div class="labels">
+            <span><label>Name</label></span>
+            <span><label>Metatype</label></span>
+            <span><label>Ethnicity</label></span>
+            <span><label>Age</label></span>
+            <span><label>Sex</label></span>
+            <span><label>Height</label></span>
+            <span><label>Weight</label></span>
+            <span><label>Reputation</label></span>
+            <span><label>Heat</label></span>
+            <span><label>Karma</label></span>
+            <span><label>Total Karma</label>
+        </div>
+        <div class="values">
+            <span><input type="text" name="attr_character_name"></span>
+            <span><input type="text" name="attr_character_metatype"></span>
+            <span><input type="text" name="attr_character_ethnicity"></span>
+            <span><input type="number" value="0" name="attr_character_age"></span>
+            <span><input type="text" name="attr_character_sex" style="width: 100px"></span>
+            <span><input type="number" value="0" name="attr_character_height"></span>
+            <span><input type="number" value="0" name="attr_character_weight"></span>
+            <span><input type="number" value="0" name="attr_character_rep"></span>
+            <span><input type="number" value="0" name="attr_character_heat"></span>
+            <span><input type="number" value="0" name="attr_character_heat"></span>
+            <span><input type="number" value="0" name="attr_character_karma"></span>
+            <span><input type="number" value="0" name="attr_character_total_karma"></span>
+        </div>
+        <div></div>
+    </div>
+</div>
+
+<div class="sheet-attributes">
+    <h3>Attributes</h3>
+    <br>
+    <div class="grid-section">
+        <div class="labels">
+            <span><label>Body</label></span>
+            <span><label>Agility</label></span>
+            <span><label>Reaction</label></span>
+            <span><label>Strength</label></span>
+            <span><label>Willpower</label></span>
+            <span><label>logic</label></span>
+            <span><label>Intuition</label></span>
+            <span><label>Charisma</label></span>
+            <span><label>Edge</label></span>
+            <span><label>Edge Points</label></span>
+            <span><label>Unarmed</label></span>
+        </div>
+        <div class="values">
+            <span><input type="number" value="0" name="attr_character_body"></span>
+            <span><input type="number" value="0" name="attr_character_agility"></span>
+            <span><input type="number" value="0" name="attr_character_reaction"></span>
+            <span><input type="number" value="0" name="attr_character_strength"></span>
+            <span><input type="number" value="0" name="attr_character_willpower"></span>
+            <span><input type="number" value="0" name="attr_character_logic"></label></span>
+            <span><input type="number" value="0" name="attr_character_intuition"></label></span>
+            <span><input type="number" value="0" name="attr_character_charisma"></span>
+            <span><input type="number" value="0" name="attr_character_edge"></span>
+            <span><input type="number" value="0" name="attr_character_edge_points"></span>
+            <span><input type="number" value="0" name="attr_character_unarmed"></span>
+        </div>
+        <div class="labels">
+            <span><label>Essence</label></span>
+            <span><label>Magic/Resonance</label></span>
+            <span><label>Initiative</label></span>
+            <span><label>Matrix Initiative</label></span>
+            <span><label>Astral Initiative</label></span>
+            <span><label>Composure</label></span>
+            <span><label>Judge Intentions</label></span>
+            <span><label>Memory</label></span>
+            <span><label>Lift/Carry</label></span>
+            <span><label>Movement</label></span>
+            <span><label>Defense Rating</label></span>
+        </div>
+        <div class="values">
+            <span><input type="number" value="0" name="attr_character_essence"></span>
+            <span><input type="number" value="0" name="attr_character_magic"></span>
+            <span><input type="number" value="0" name="attr_character_initiative"></span>
+            <span><input type="number" value="0" name="attr_character_matrix_init"></span>
+            <span><input type="number" value="0" name="attr_character_astral_init"></span>
+            <span><input type="number" value="0" name="attr_character_composure"></span>
+            <span><input type="number" value="0" name="attr_character_intentions"></span>
+            <span><input type="number" value="0" name="attr_character_memory"></span>
+            <span><input type="number" value="0" name="attr_character_lift"></span>
+            <span><input type="number" value="0" name="attr_character_movement"></span>
+            <span><input type="number" value="0" name="attr_character_defense"></span>
+        </div>
+    </div>
+</div>
+
+<div class="sheet-skills">
+    <h3>Skills</h3>
+        <br>
+        <fieldset class="repeating_skills" style="display: none;">
+            <div class="flex-section-horizontal">
+                <span><label>Skill<input type="text" name="attr_skill_name"></label></span>
+                <span><label>Rank<input type="number" name="attr_skill_rank"></label></span>
+                <span><label>Attribute<input type="text" name="attr_skill_attribute"></label></span>
+                <span><label>Type<input type="text" name="attr_skill_type"></label></span>
+                <br>
+            </div>
+        </fieldset>
+        <div class="repcontainer" data-groupname="repeating_skills">
+            <div class="repitem">
+                <div class="itemcontrol">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="sheet-qualities">
+    <h3>Qualities</h3>
+    <div class="flex-section-horizontal"></div>
+        <br>
+        <fieldset class="repeating_qualities" style="display: none;">
+            <div class="flex-section-horizontal">
+                <span><label>Quality<input type="text" name="attr_quality_name"></label></span>
+                <span><label>Notes<textarea name="attr_quality_notes" rows="1" style="resize: none;"></textarea></label></span>
+                <span style="margin-left:2%"><label>Type<select name="attr_quality_type">
+                    <option value="positive">Positive</option>
+                    <option value="negative">Negative</option>
+                </select></label></span>
+                <br>
+            </div>
+        </fieldset>
+        <div class="repcontainer" data-groupname="repeating_qualities">
+            <div class="repitem">
+                <div class="itemcontrol">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="sheet-lifestyle">
+    <h2>Lifestyle</h2>
+    <div class="flex-section-horizontal"></div>
+        <br>
+        <fieldset class="repeating_lifestyle" style="display: none;">
+            <div class="flex-section-horizontal">
+                <span><label>Lifestlye<select name="attr_character_lifestyle">
+                    <option value="street">Street</option>
+                    <option value="squatter">Squatter</option>
+                    <option value="middle">Middle</option>
+                    <option value="high">High</option>
+                    <option value="luxury">Luxury</option>
+                </select></label></span>
+                <span><label>Nuyen<input type="number" name="attr_lifestyle_nuyen"></label></span>
+                <br>
+            </div>
+        </fieldset>
+        <div class="repcontainer" data-groupname="repeating_lifestyle">
+            <div class="repitem">
+                <div class="itemcontrol">
+            </div>
+        </div>
+    </div>
+    <br>
+    <h2>Licenses</h2>
+    <div class="flex-section-horizontal"></div>
+        <br>
+        <fieldset class="repeating_license" style="display: none;">
+            <div class="flex-section-horizontal">
+                <span><input type="text" name="attr_character_license" style="border:none; width: 300%;">
+                <br>
+            </div>
+        </fieldset>
+        <div class="repcontainer" data-groupname="repeating_license">
+            <div class="repitem">
+                <div class="itemcontrol">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="sheet-weapons">
+    <br>
+    <div class="2colrow">
+        <div class="col">
+            <div class="flex-section-horizontal"></div>
+                <h2>Ranged Weapons</h2>
+                <br>
+                <fieldset class="repeating_ranged-weapons" style="display: none;">
+                    <div class="flex-section-horizontal">
+                        <span><label>Weapon<input type="text" name="attr_weapon_name"></label></span>
+                        <span><label>DV<input type="number" name="attr_weapon_dv"></label></span>
+                        <span><label>Mode<input type="text" name="attr_weapon_mode"></label></span>
+                        <span><label>Close<input type="number" name="attr_weapon_close"></label></span>
+                        <span><label>Near<input type="number" name="attr_weapon_near"></label></span>
+                        <span><label>Far<input type="number" name="attr_weapon_far"></label></span> 
+                        <span><label>Extreme<input type="number" name="attr_weapon_extreme"></label></span> 
+                        <span><label>Ammo<input type="text" name="attr_weapon_ammo"></label></span>                      
+                    </div>
+                </fieldset>
+                <div class="repcontainer" data-groupname="repeating_ranged-weapons">
+                    <div class="repitem">
+                        <div class="itemcontrol">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="flex-section-horizontal"></div>
+                <h2>Melee Weapons</h2>
+                <br>
+                <fieldset class="repeating_melee-weapons" style="display: none;">
+                    <div class="flex-section-horizontal">
+                        <span><label>Weapon<input type="text" name="attr_weapon_name"></label></span>
+                        <span><label>DV<input type="number" name="attr_weapon_dv"></label></span>
+                        <span><label>Close<input type="number" name="attr_weapon_close"></label></span>
+                    </div>
+                </fieldset>
+                <div class="repcontainer" data-groupname="repeating_melee-weapons">
+                    <div class="repitem">
+                        <div class="itemcontrol">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="sheet-spells">
+    <h3>Spells</h3>
+    <div>
+        <div class="flex-section-horizontal"></div>
+                <br>
+                <fieldset class="repeating_spells" style="display: none;">
+                    <div class="flex-section-horizontal">
+                        <span><label>S/P/R/CF<input type="text" name="attr_spell_name"></label></span>
+                        <span><label>Type/Target<input type="text" name="attr_spell_target"></label></span>
+                        <span><label>Ranged<input type="number" name="attr_spell_range"></label></span>
+                        <span><label>Duration<input type="number" name="attr_spell_number"></label></span>
+                        <span><label>Drain<input type="number" name="attr_spell_drain"></label></span>                      
+                    </div>
+                </fieldset>
+                <div class="repcontainer" data-groupname="repeating_spells">
+                    <div class="repitem">
+                        <div class="itemcontrol">
+                    </div>
+                </div>
+            </div>
+    </div>   
+</div>
+
+<div class="sheet-adept">
+    <h3>Adept Powers</h3>
+    <div class="flex-section-horizontal"></div>
+    <br>
+        <fieldset class="repeating_adept" style="display: none;">
+            <div class="flex-section-horizontal">
+                <span><label>Name<input type="text" name="attr_adept_name"></label></span>
+                <span><label>Level<input type="number" name="attr_adept_level"></label></span>
+                <span><label>Notes<textarea name="attr_gear_notes"></textarea></label></span>                   
+            </div>
+        </fieldset>
+        <div class="repcontainer" data-groupname="repeating_adept">
+            <div class="repitem">
+                <div class="itemcontrol">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="sheet-armor">
+    <h3>Armor</h3>
+    <div class="flex-section-horizontal"></div>
+        <br>
+        <fieldset class="repeating_armor" style="display: none;">
+            <div class="flex-section-horizontal">
+                <span><label>Armor<input type="text" name="attr_armor_name"></label></span>
+                <span><label>Rating<input type="number" name="attr_armor_rating"></label></span>
+                <span><label>Notes<textarea name="attr_armor_notes"></textarea></label></span>                   
+            </div>
+        </fieldset>
+        <div class="repcontainer" data-groupname="repeating_armor">
+            <div class="repitem">
+                <div class="itemcontrol">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="sheet-gear">
+    <h3>Gear</h3>
+    <div class="flex-section-horizontal"></div>
+        <br>
+        <fieldset class="repeating_gear" style="display: none;">
+            <div class="flex-section-horizontal">
+                <span><label>Item<input type="text" name="attr_gear_name"></label></span>
+                <span><label>Rating<input type="number" name="attr_gear_rating"></label></span>
+                <span><label>Notes<textarea name="attr_gear_notes"></textarea></label></span>                   
+            </div>
+        </fieldset>
+        <div class="repcontainer" data-groupname="repeating_gear">
+            <div class="repitem">
+                <div class="itemcontrol">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="sheet-vehicles">
+    <h3>Vehicles</h3>
+    <div class="flex-section-horizontal"></div>
+        <br>
+        <fieldset class="repeating_vehicles" style="display: none;">
+            <div class="flex-section-horizontal">
+                <span><label>Vehicle<input type="text" name="attr_vehicle_name"></label></span>
+                <span><label>Handling<input type="number" name="attr_vehicle_handling"></label></span>
+                <span><label>Acceleration<input type="number" name="attr_vehicle_acceleration"></label></span>       
+                <span><label>Speed Interval<input type="number" name="attr_vehicle_speedint"></label></span> 
+                <span><label>Top Speed<input type="number" name="attr_vehicle_topspeed"></label></span> 
+                <span><label>Body<input type="number" name="attr_vehicle_body"></label></span>       
+                <span><label>Armor<input type="number" name="attr_vehicle_armor"></label></span>
+                <span><label>Pilot<input type="text" name="attr_vehicle_pilot"></label></span>
+                <span><label>Sensor<input type="number" name="attr_vehicle_sensor"></label></span>
+                <span><label>Seats<input type="number" name="attr_vehicle_seats"></label></span>  
+                <span><label>Notes<textarea name="attr_vehicle_notes"></textarea></label></span>                
+            </div>
+        </fieldset>
+        <div class="repcontainer" data-groupname="repeating_vehicles">
+            <div class="repitem">
+                <div class="itemcontrol">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="sheet-contacts">
+    <h3>Contacts</h3>
+    <div class="flex-section-horizontal"></div>
+        <br>
+        <fieldset class="repeating_contacts" style="display: none;">
+            <div class="flex-section-horizontal">
+                <span><label>Name<input type="text" name="attr_contact_name"></label></span>
+                <span><label>Loyalty<input type="number" name="attr_contact_loyalty"></label></span>
+                <span><label>Connection<input type="number" name="attr_contact_connection"></label></span>               
+            </div>
+        </fieldset>
+        <div class="repcontainer" data-groupname="repeating_contacts">
+            <div class="repitem">
+                <div class="itemcontrol">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="sheet-journal">
+    <h3>Journal</h3>
+    <br>
+    <textarea></textarea>
+</div>
+
+
+<!-----------------------------------Script Worker----------------------------------------->
+
+<script type="text/worker">
+    const buttonList = ["character", "attributes", "skills", "qualities", "lifestyle", "weapons", "spells", "adept", "armor", "gear", "vehicles", "contacts", "journal"];
+
+    buttonList.forEach(button => {
+        on(`clicked:${button}`, function() {
+            setAttrs({
+                sheetTab: button
+            });
+        });
+    });
+</script>
