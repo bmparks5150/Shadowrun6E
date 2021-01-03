@@ -20,15 +20,16 @@ h2{
 
 label{
     color: #b6d9f8;
-    font-size: medium;
-    margin-left: 40%;
-    font-weight: ;
+    text-align: center;
 }
 
 textarea{
     background: rgba(0,0,0,0);
     color: #b6d9f8;
-    border: 0;
+    border: 1px solid black;
+    resize: none;
+    height: auto;
+    font-size: medium;
 }
 
 select{
@@ -42,6 +43,8 @@ input[type="text"]{
     background: rgba(0,0,0,0);
     color: #b6d9f8;
     font-size: medium;
+    width: 4.5em;
+    text-align: center;
 } 
 
 input[type="number"]{
@@ -50,17 +53,19 @@ input[type="number"]{
     -moz-appearance: textfield;
     background: rgba(0,0,0,0);
     color: #b6d9f8;
-    font-size: medium;
     text-align: center;
+    font-size: medium;
+    width: 4.5em;
 }
 
 .charsheet{
     background-image: url(https://raw.githubusercontent.com/bmparks5150/Shadowrun6E/main/Shadowrun6E%20Character%20Sheet/images/Shadworun-Background.png);
     font-family: Contrail, serif;
+    font-size: medium;
 }
 
 .sheet-flex-section{
-    display:flex;
+    display: flex;
     border: 1px solid black;
     justify-content: center;
 }
@@ -69,24 +74,36 @@ input[type="number"]{
     display:flex;
     flex-direction: row;
     border: 1px solid black;
-    justify-content: center;
+    justify-content: space-around;
+    flex-wrap: nowrap;
 }
 
+.sheet-flex-section-horizontal input{
+    margin-left: 20px;
+}
 
 .sheet-grid-section{
     display: grid;    
-    grid-template-columns: repeat(4, 20%);  
+    grid-template-columns: repeat(4, 10%);  
     justify-content: center;  
-    margin-left: 5%;
+    column-gap: 20px;
 }
 
 .sheet-labels{
     display: grid;
+    text-align: end;
 }
 
 .sheet-values{
     display: grid;
-    margin-left: 20px;
+}
+
+.sheet-left-values{
+    padding-left: 1rem;
+}
+
+.sheet-right-values{
+    padding-left: 6rem;
 }
 
 .sheet-character,
@@ -125,11 +142,15 @@ input[type="number"]{
     display: inline-block;
 }
 
-.sheet.long-number{
+.sheet-long-number{
     size: 500px;
     width: 100%;
 }
 
 .sheet-no-border{
     border: 0;
+}
+
+input.small-label{
+    width: 100px;
 }

@@ -42,7 +42,7 @@
             <span><input type="text" name="attr_character_metatype"></span>
             <span><input type="text" name="attr_character_ethnicity"></span>
             <span><input type="number" value="0" name="attr_character_age"></span>
-            <span><input type="text" name="attr_character_sex" style="width: 100px"></span>
+            <span><input type="text" name="attr_character_sex"></span>
             <span><input type="number" value="0" name="attr_character_height"></span>
             <span><input type="number" value="0" name="attr_character_weight"></span>
             <span><input type="number" value="0" name="attr_character_rep"></span>
@@ -51,7 +51,6 @@
             <span><input type="number" value="0" name="attr_character_karma"></span>
             <span><input type="number" value="0" name="attr_character_total_karma"></span>
         </div>
-        <div></div>
     </div>
 </div>
 
@@ -59,7 +58,7 @@
     <h3>Attributes</h3>
     <br>
     <div class="grid-section">
-        <div class="labels">
+        <div class="labels left-labels">
             <span><label>Body</label></span>
             <span><label>Agility</label></span>
             <span><label>Reaction</label></span>
@@ -72,7 +71,7 @@
             <span><label>Edge Points</label></span>
             <span><label>Unarmed</label></span>
         </div>
-        <div class="values">
+        <div class="values left-values">
             <span><input type="number" value="0" name="attr_character_body"></span>
             <span><input type="number" value="0" name="attr_character_agility"></span>
             <span><input type="number" value="0" name="attr_character_reaction"></span>
@@ -85,7 +84,7 @@
             <span><input type="number" value="0" name="attr_character_edge_points"></span>
             <span><input type="number" value="0" name="attr_character_unarmed"></span>
         </div>
-        <div class="labels">
+        <div class="labels right-labels">
             <span><label>Essence</label></span>
             <span><label>Magic/Resonance</label></span>
             <span><label>Initiative</label></span>
@@ -98,7 +97,7 @@
             <span><label>Movement</label></span>
             <span><label>Defense Rating</label></span>
         </div>
-        <div class="values">
+        <div class="values right-values">
             <span><input type="number" value="0" name="attr_character_essence"></span>
             <span><input type="number" value="0" name="attr_character_magic"></span>
             <span><input type="number" value="0" name="attr_character_initiative"></span>
@@ -129,9 +128,9 @@
         <div class="repcontainer" data-groupname="repeating_skills">
             <div class="repitem">
                 <div class="itemcontrol">
+                </div>
             </div>
         </div>
-    </div>
 </div>
 
 <div class="sheet-qualities">
@@ -151,10 +150,9 @@
         </fieldset>
         <div class="repcontainer" data-groupname="repeating_qualities">
             <div class="repitem">
-                <div class="itemcontrol">
+                <div class="itemcontrol"></div>
             </div>
         </div>
-    </div>
 </div>
 
 <div class="sheet-lifestyle">
@@ -170,32 +168,32 @@
                     <option value="high">High</option>
                     <option value="luxury">Luxury</option>
                 </select></label></span>
-                <span><label>Nuyen<input type="number" name="attr_lifestyle_nuyen"></label></span>
+                <span><label>Nuyen<input type="number" name="attr_lifestyle_nuyen" style="width: 100px;"></label></span>
                 <br>
             </div>
         </fieldset>
         <div class="repcontainer" data-groupname="repeating_lifestyle">
             <div class="repitem">
                 <div class="itemcontrol">
+                </div>
             </div>
         </div>
-    </div>
     <br>
     <h2>Licenses</h2>
     <div class="flex-section-horizontal"></div>
         <br>
         <fieldset class="repeating_license" style="display: none;">
             <div class="flex-section-horizontal">
-                <span><input type="text" name="attr_character_license" style="border:none; width: 300%;">
+                <span><label>License<input type="text" name="attr_character_license"></label></span>
                 <br>
             </div>
         </fieldset>
         <div class="repcontainer" data-groupname="repeating_license">
             <div class="repitem">
                 <div class="itemcontrol">
+                </div>
             </div>
         </div>
-    </div>
 </div>
 
 <div class="sheet-weapons">
@@ -249,19 +247,19 @@
     <h3>Spells</h3>
     <div>
         <div class="flex-section-horizontal"></div>
-                <br>
-                <fieldset class="repeating_spells" style="display: none;">
-                    <div class="flex-section-horizontal">
-                        <span><label>S/P/R/CF<input type="text" name="attr_spell_name"></label></span>
-                        <span><label>Type/Target<input type="text" name="attr_spell_target"></label></span>
-                        <span><label>Ranged<input type="number" name="attr_spell_range"></label></span>
-                        <span><label>Duration<input type="number" name="attr_spell_number"></label></span>
-                        <span><label>Drain<input type="number" name="attr_spell_drain"></label></span>                      
-                    </div>
-                </fieldset>
-                <div class="repcontainer" data-groupname="repeating_spells">
-                    <div class="repitem">
-                        <div class="itemcontrol">
+            <br>
+            <fieldset class="repeating_spells" style="display: none;">
+                <div class="flex-section-horizontal">
+                    <span><label>S/P/R/CF<input type="text" name="attr_spell_name"></label></span>
+                    <span><label>Type/Target<input type="text" name="attr_spell_target"></label></span>
+                    <span><label>Ranged<input type="number" name="attr_spell_range"></label></span>
+                    <span><label>Duration<input type="number" name="attr_spell_number"></label></span>
+                    <span><label>Drain<input type="number" name="attr_spell_drain"></label></span>                      
+                </div>
+            </fieldset>
+            <div class="repcontainer" data-groupname="repeating_spells">
+                <div class="repitem">
+                    <div class="itemcontrol">
                     </div>
                 </div>
             </div>
@@ -276,7 +274,7 @@
             <div class="flex-section-horizontal">
                 <span><label>Name<input type="text" name="attr_adept_name"></label></span>
                 <span><label>Level<input type="number" name="attr_adept_level"></label></span>
-                <span><label>Notes<textarea name="attr_gear_notes"></textarea></label></span>                   
+                <span><label>Notes<textarea rows="2" cols="30" name="attr_adept_notes"></textarea></label></span>                   
             </div>
         </fieldset>
         <div class="repcontainer" data-groupname="repeating_adept">
@@ -309,7 +307,7 @@
 <div class="sheet-gear">
     <h3>Gear</h3>
     <div class="flex-section-horizontal"></div>
-        <br>
+    <br>
         <fieldset class="repeating_gear" style="display: none;">
             <div class="flex-section-horizontal">
                 <span><label>Item<input type="text" name="attr_gear_name"></label></span>
@@ -327,8 +325,8 @@
 
 <div class="sheet-vehicles">
     <h3>Vehicles</h3>
+    <br>
     <div class="flex-section-horizontal"></div>
-        <br>
         <fieldset class="repeating_vehicles" style="display: none;">
             <div class="flex-section-horizontal">
                 <span><label>Vehicle<input type="text" name="attr_vehicle_name"></label></span>
@@ -341,7 +339,8 @@
                 <span><label>Pilot<input type="text" name="attr_vehicle_pilot"></label></span>
                 <span><label>Sensor<input type="number" name="attr_vehicle_sensor"></label></span>
                 <span><label>Seats<input type="number" name="attr_vehicle_seats"></label></span>  
-                <span><label>Notes<textarea name="attr_vehicle_notes"></textarea></label></span>                
+                <div></div>
+                <span><label>Notes<textarea name="attr_vehicle_notes"></textarea></label></span>               
             </div>
         </fieldset>
         <div class="repcontainer" data-groupname="repeating_vehicles">
@@ -359,6 +358,7 @@
         <fieldset class="repeating_contacts" style="display: none;">
             <div class="flex-section-horizontal">
                 <span><label>Name<input type="text" name="attr_contact_name"></label></span>
+                <span><label>Type<input type="text" name="attr_contact_type"></label></span>
                 <span><label>Loyalty<input type="number" name="attr_contact_loyalty"></label></span>
                 <span><label>Connection<input type="number" name="attr_contact_connection"></label></span>               
             </div>
@@ -374,9 +374,11 @@
 <div class="sheet-journal">
     <h3>Journal</h3>
     <br>
-    <textarea></textarea>
-</div>
+    <div class="flex-section">
+        <textarea style="height: 350px;"></textarea>
 
+    </div>
+</div>
 
 <!-----------------------------------Script Worker----------------------------------------->
 
