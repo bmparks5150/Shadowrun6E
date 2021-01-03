@@ -1,17 +1,19 @@
-<div class="btn-span">
-    <button type="action" name="act_character">Character</button>
-    <button type="action" name="act_attributes">Attributes</button>
-    <button type="action" name="act_skills">Skills</button>
-    <button type="action" name="act_qualities">Qualities</button>
-    <button type="action" name="act_lifestyle">Lifestyle</button>
-    <button type="action" name="act_weapons">Weapons</button>
-    <button type="action" name="act_spells">Spells</button>
-    <button type="action" name="act_adept">Adept</button>     
-    <button type="action" name="act_armor">Armor</button>
-    <button type="action" name="act_gear">Gear</button>
-    <button type="action" name="act_vehicles">Vehicles</button>
-    <button type="action" name="act_contacts">Contacts</button>
-    <button type="action" name="act_journal">Journal</button>
+<div class="flex-section no-border">
+    <div class="btn-span">
+        <button type="action" name="act_character">Character</button>
+        <button type="action" name="act_attributes">Attributes</button>
+        <button type="action" name="act_skills">Skills</button>
+        <button type="action" name="act_qualities">Qualities</button>
+        <button type="action" name="act_lifestyle">Lifestyle</button>
+        <button type="action" name="act_weapons">Weapons</button>
+        <button type="action" name="act_spells">Spells</button>
+        <button type="action" name="act_adept">Adept</button>     
+        <button type="action" name="act_armor">Armor</button>
+        <button type="action" name="act_gear">Gear</button>
+        <button type="action" name="act_vehicles">Vehicles</button>
+        <button type="action" name="act_contacts">Contacts</button>
+        <button type="action" name="act_journal">Journal</button>
+    </div>
 </div>
 <input type="hidden" class="sheet-tabstoggle" name="attr_sheetTab" value="character" />
 
@@ -114,14 +116,12 @@
 
 <div class="sheet-skills">
     <h3>Skills</h3>
-    <div class="flex-section-horizontal"></div>
         <br>
         <fieldset class="repeating_skills" style="display: none;">
             <div class="flex-section-horizontal">
                 <span><label>Skill<input type="text" name="attr_skill_name"></label></span>
                 <span><label>Rank<input type="number" name="attr_skill_rank"></label></span>
-                <span><label>Attribute<input type="text" name="attr_skill_attribute"></label></span>
-                <span><label>Type<input type="text" name="attr_skill_type" style="width:75%"></label></span>
+                <span><label>Type<input type="text" name="attr_skill_type"></label></span>
                 <br>
             </div>
         </fieldset>

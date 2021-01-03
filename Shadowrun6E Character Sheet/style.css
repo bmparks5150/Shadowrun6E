@@ -9,19 +9,20 @@ img{
 h3{
     text-align: center;
     color: #b6d9f8;
-    font-size: large;
+    font-size: x-large;
 }
 
 h2{
     text-align: center;
     color: #b6d9f8;
-    font-size: large;
+    font-size:x-large;
 }
 
 label{
     color: #b6d9f8;
-    font-size: small;
+    font-size: medium;
     margin-left: 40%;
+    font-weight: ;
 }
 
 textarea{
@@ -40,7 +41,7 @@ input[type="text"]{
     border-bottom: 2px solid #b6d9f8;
     background: rgba(0,0,0,0);
     color: #b6d9f8;
-    font-size: small;
+    font-size: medium;
 } 
 
 input[type="number"]{
@@ -49,17 +50,19 @@ input[type="number"]{
     -moz-appearance: textfield;
     background: rgba(0,0,0,0);
     color: #b6d9f8;
-    font-size: small;
+    font-size: medium;
     text-align: center;
 }
 
 .charsheet{
     background-image: url(https://raw.githubusercontent.com/bmparks5150/Shadowrun6E/main/Shadowrun6E%20Character%20Sheet/images/Shadworun-Background.png);
-    font-family: Contrail, sans-serif;
+    font-family: Contrail, serif;
 }
 
-.sheet-btn-span{
-    margin-left: 2rem;
+.sheet-flex-section{
+    display:flex;
+    border: 1px solid black;
+    justify-content: center;
 }
 
 .sheet-grid-section{
@@ -110,15 +113,6 @@ input[type="number"]{
     display: block;
 }
 
-.sheet-flex-section-horizontal{
-    display:flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    border: 1px solid black;
-    justify-content:flex-start;
-    color: #ff1ea1;
-}
-
 .repcontainer[data-groupname="repeating_example"] > .repitem {
     display: inline-block;
 }
@@ -128,3 +122,6 @@ input[type="number"]{
     width: 100%;
 }
 
+.sheet-no-border{
+    border: 0;
+}
